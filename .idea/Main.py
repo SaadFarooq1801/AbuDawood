@@ -1,6 +1,8 @@
-## Simplified Python Program to Input Two Integers
+import Addition
+import product
+import division
 
-def get_two_integers():
+def main():
     """
     Prompts the user to enter two whole numbers (integers).
     Assumes valid integer input.
@@ -13,11 +15,13 @@ def get_two_integers():
     num2 = int(input("Please enter the second whole number: "))
 
     # 3. Print the results and a simple calculation
-    print("\n--- Input Summary ---")
-    print(f"You entered the first integer: {num1}")
-    print(f"You entered the second integer: {num2}")
-    print("---------------------")
+    print("\n--- Calculation Summary ---")
+    print(f"Addition of {num1} and {num2} is: {Addition.addition(num1,num2)}")
+    print(f"The product of {num1} and {num2} is: {product.product(num1,num2)}")
+    print(f"The quotient of {num1} by {num2} is: {division.division(num1,num2)}")
+    print("---------------------------")
+
 
 # Run the main function
 if __name__ == "__main__":
-    get_two_integers()
+    main()
