@@ -1,4 +1,5 @@
 import Addition
+import difference
 import product
 import division
 
@@ -17,6 +18,7 @@ def main():
     # 3. Print the results and a simple calculation
     print("\n--- Calculation Summary ---")
     print(f"Addition of {num1} and {num2} is: {Addition.addition(num1,num2)}")
+    print(f"Subtraction of {num2} from {num1} is: {difference.difference(num1,num2)}")
     print(f"The product of {num1} and {num2} is: {product.product(num1,num2)}")
     print(f"The quotient of {num1} by {num2} is: {division.division(num1,num2)}")
     print("---------------------------")
